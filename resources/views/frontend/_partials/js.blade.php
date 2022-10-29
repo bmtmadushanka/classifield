@@ -57,3 +57,21 @@
     });
 
 </script>
+
+ <!-- Date Dropper Script-->
+ <script>
+    $('#reservation-date').dateDropper();
+
+</script>
+<!-- Time Dropper Script-->
+<script>
+    this.$('#reservation-time').timeDropper({
+        setCurrentTime: false,
+        meridians: true,
+        primaryColor: "#e8212a",
+        borderColor: "#e8212a",
+        minutesInterval: '15'
+    });
+
+</script>
+

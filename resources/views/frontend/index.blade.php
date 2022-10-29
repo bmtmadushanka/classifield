@@ -1523,79 +1523,9 @@
         </div>
         <!-- END PRELOADER -->
 
-        <!-- ARCHIVES JS -->
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/tether.min.js"></script>
-        <script src="js/moment.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/mmenu.min.js"></script>
-        <script src="js/mmenu.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/aos2.js"></script>
-        <script src="js/fitvids.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/lightcase.js"></script>
-        <script src="js/search.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/slick.js"></script>
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/ajaxchimp.min.js"></script>
-        <script src="js/newsletter.js"></script>
-        <script src="js/timedropper.js"></script>
-        <script src="js/datedropper.js"></script>
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/searched.js"></script>
-        <script src="js/forms-2.js"></script>
-        <script src="js/color-switcher.js"></script>
-
-        <!-- Slider Revolution scripts -->
-        <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-        <!-- FAV-JOB JS -->
-        <script>
-            $('.fav-job').on('click', function() {
-                $(this).toggleClass('active');
-            });
-
-        </script>
-        <!-- Date Dropper Script-->
-        <script>
-            $('#reservation-date').dateDropper();
-
-        </script>
-        <!-- Time Dropper Script-->
-        <script>
-            this.$('#reservation-time').timeDropper({
-                setCurrentTime: false,
-                meridians: true,
-                primaryColor: "#e8212a",
-                borderColor: "#e8212a",
-                minutesInterval: '15'
-            });
-
-        </script>
-
-        <!-- MAIN JS -->
-        <script src="js/script.js"></script>
-
+    @include('frontend._partials.js')
+      
+       
     </div>
     <!-- Wrapper / End -->
 </body>
