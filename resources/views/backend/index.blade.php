@@ -20,7 +20,7 @@
     =========================================================
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     -->
-    @include('backend._partials.css')
+    @include('backend._partials.style')
 </head>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
@@ -29,7 +29,7 @@
         <div class="app-main">
                 <div class="app-sidebar sidebar-shadow">
                     <div class="app-header__logo">
-                        <div class="logo-src"></div>
+                        <div class="logo"></div>
                         <div class="header__pane ml-auto">
                             <div>
                                 <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
@@ -443,7 +443,7 @@
                                                                 <div class="widget-content p-0">
                                                                     <div class="widget-content-wrapper">
                                                                         <div class="widget-content-left mr-3">
-                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/9.jpg" alt="">
+                                                                            <img width="42" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/9.jpg')}}" alt="">
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div class="widget-heading">Ella-Rose Henry</div>
@@ -465,7 +465,7 @@
                                                                 <div class="widget-content p-0">
                                                                     <div class="widget-content-wrapper">
                                                                         <div class="widget-content-left mr-3">
-                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/5.jpg" alt="">
+                                                                            <img width="42" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/5.jpg')}}" alt="">
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div class="widget-heading">Ruben Tillman</div>
@@ -487,7 +487,7 @@
                                                                 <div class="widget-content p-0">
                                                                     <div class="widget-content-wrapper">
                                                                         <div class="widget-content-left mr-3">
-                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                            <img width="42" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/4.jpg')}}" alt="">
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div class="widget-heading">Vinnie Wagstaff</div>
@@ -509,7 +509,7 @@
                                                                 <div class="widget-content p-0">
                                                                     <div class="widget-content-wrapper">
                                                                         <div class="widget-content-left mr-3">
-                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                                                            <img width="42" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/3.jpg')}}" alt="">
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div class="widget-heading">Ella-Rose Henry</div>
@@ -531,7 +531,7 @@
                                                                 <div class="widget-content p-0">
                                                                     <div class="widget-content-wrapper">
                                                                         <div class="widget-content-left mr-3">
-                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
+                                                                            <img width="42" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/2.jpg')}}" alt="">
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div class="widget-heading">Ruben Tillman</div>
@@ -771,7 +771,7 @@
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left mr-3">
                                                                 <div class="widget-content-left">
-                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                    <img width="40" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/4.jpg')}}" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="widget-content-left flex2">
@@ -796,7 +796,7 @@
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left mr-3">
                                                                 <div class="widget-content-left">
-                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                                                    <img width="40" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/3.jpg')}}" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="widget-content-left flex2">
@@ -821,7 +821,7 @@
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left mr-3">
                                                                 <div class="widget-content-left">
-                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
+                                                                    <img width="40" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/2.jpg')}}" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="widget-content-left flex2">
@@ -846,7 +846,7 @@
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left mr-3">
                                                                 <div class="widget-content-left">
-                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/1.jpg" alt=""></div>
+                                                                    <img width="40" class="rounded-circle" src="{{asset('backend/="assets/images/avatars/1.jpg')}}" alt=""></div>
                                                             </div>
                                                             <div class="widget-content-left flex2">
                                                                 <div class="widget-heading">Vinnie Wagstaff</div>
