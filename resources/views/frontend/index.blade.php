@@ -31,7 +31,7 @@
                     <div class="left-side">
                         <!-- Logo -->
                         <div id="logo">
-                            <a href="index.html"><img src="images/logo.svg" alt=""></a>
+                            <a href="index.html"><img src="{{asset('frontend/assets/images/logo.svg')}}')}}" alt=""></a>
                         </div>
                         <!-- Mobile Navigation -->
                         <div class="mmenu-trigger">
@@ -169,7 +169,7 @@
                     <!-- Right Side Content / End -->
                     <div class="header-user-menu user-menu add">
                         <div class="header-user-name">
-                            <span><img src="images/testimonials/ts-1.jpg" alt=""></span>Hi, Mary!
+                            <span><img src="{{asset('frontend/assets/images/testimonials/ts-1.jpg')}}" alt=""></span>Hi, Mary!
                         </div>
                         <ul>
                             <li><a href="user-profile.html">Edit profile</a></li>
@@ -218,7 +218,7 @@
                 <div class="row d-flex align-items-center bg8">
                     <div class="col-lg-6 pr-5 ilust" data-aos="fade-right">
                         <div class="left wow fadeInLeft">
-                            <img src="images/bg/slider1.png" alt="">
+                            <img src="{{asset('frontend/assets/images/bg/slider1.png')}}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
@@ -304,7 +304,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/1.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/1.jpg')}}" alt="">
                 </div>
                 <div class="item" data-aos="fade-up">
                     <div class="tp-caption">
@@ -326,7 +326,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/2.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/2.jpg')}}" alt="">
                 </div>
                 <div class="item" data-aos="fade-up">
                     <div class="tp-caption">
@@ -348,7 +348,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/3.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/3.jpg')}}" alt="">
                 </div>
                 <div class="item" data-aos="fade-up">
                     <div class="tp-caption">
@@ -370,7 +370,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/4.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/4.jpg')}}" alt="">
                 </div>
                 <div class="item" data-aos="fade-up">
                     <div class="tp-caption">
@@ -392,7 +392,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/5.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/5.jpg')}}" alt="">
                 </div>
                 <div class="item" data-aos="fade-up">
                     <div class="tp-caption">
@@ -414,7 +414,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/6.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/6.jpg')}}" alt="">
                 </div>
                 <div class="item" data-aos="fade-up">
                     <div class="tp-caption">
@@ -436,7 +436,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/66.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/66.jpg')}}" alt="">
                 </div>
                 <div class="item" data-aos="fade-up">
                     <div class="tp-caption">
@@ -458,7 +458,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/visited-cities/3.jpg" alt="">
+                    <img src="{{asset('frontend/assets/images/visited-cities/3.jpg')}}" alt="">
                 </div>
             </div>
         </section>
@@ -474,7 +474,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/1.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/1.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">Hotels</h4></a>
@@ -486,7 +486,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/2.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/2.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">Restaurant</h4></a>
@@ -498,7 +498,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/3.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/3.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">GYM</h4></a>
@@ -510,7 +510,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/4.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/4.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">Coffee Shop</h4></a>
@@ -522,7 +522,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box no-mb remb-30">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/5.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/5.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">Movie Theater</h4></a>
@@ -534,7 +534,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box no-mb remb-30">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/6.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/6.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">Discotheque</h4></a>
@@ -546,7 +546,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box no-mb">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/8.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/8.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">Shopping Mall</h4></a>
@@ -558,7 +558,7 @@
                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="zoom-in">
                         <div class="category-box no-mb si-mt">
                             <div class="icon">
-                                <a href="job-detail.html"><img src="images/icons/9.png" alt="" /></a>
+                                <a href="job-detail.html"><img src="{{asset('frontend/assets/images/icons/9.png')}}" alt="" /></a>
                             </div>
                             <div class="category-header">
                                 <a href="job-detail.html"><h4 class="mb-1">Fast Food</h4></a>
@@ -607,14 +607,14 @@
                                                         <li class="ml-1">( 6 Reviews )</li>
                                                     </ul>
                                                 </div>
-                                                <img src="images/popular-listings/1.jpg" alt="home-1" class="img-responsive">
+                                                <img src="{{asset('frontend/assets/images/popular-listings/1.jpg')}}" alt="home-1" class="img-responsive">
                                                 <div class="overlay"></div>
                                             </a>
                                         </div>
                                         <div class="fr-grid-thumb">
                                             <a href="candidate-profile.html">
                                                 <div class="overall-rate"><i class="fas fa-check"></i></div>
-                                                <img src="images/freelancers/free-1.jpg" class="img-fluid mx-auto" alt="" />
+                                                <img src="{{asset('frontend/assets/images/freelancers/free-1.jpg')}}" class="img-fluid mx-auto" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -639,7 +639,7 @@
                                         </ul>
                                         <div class="footer mt-3 img-2">
                                             <a href="listing-details.html">
-                                                <img src="images/icons/2.png" width="20" class="mr-2" alt=""> Restaurant
+                                                <img src="{{asset('frontend/assets/images/icons/2.png')}}" width="20" class="mr-2" alt=""> Restaurant
                                             </a>
                                             <span>
                                 <i class="fas fa-lock-open"></i> Open Now
@@ -675,14 +675,14 @@
                                                         <li class="ml-1">( 3 Reviews )</li>
                                                     </ul>
                                                 </div>
-                                                <img src="images/popular-listings/2.jpg" alt="home-1" class="img-responsive">
+                                                <img src="{{asset('frontend/assets/images/popular-listings/2.jpg')}}" alt="home-1" class="img-responsive">
                                                 <div class="overlay"></div>
                                             </a>
                                         </div>
                                         <div class="fr-grid-thumb">
                                             <a href="candidate-profile.html">
                                                 <div class="overall-rate"><i class="fas fa-check"></i></div>
-                                                <img src="images/freelancers/free-2.jpg" class="img-fluid mx-auto" alt="" />
+                                                <img src="{{asset('frontend/assets/images/freelancers/free-2.jpg')}}" class="img-fluid mx-auto" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -707,7 +707,7 @@
                                         </ul>
                                         <div class="footer mt-3 img-3">
                                             <a href="listing-details.html">
-                                                <img src="images/icons/3.png" width="20" class="mr-2" alt=""> Fitness
+                                                <img src="{{asset('frontend/assets/images/icons/3.png')}}" width="20" class="mr-2" alt=""> Fitness
                                             </a>
                                             <span>
                                 <i class="fas fa-lock"></i> Closed Now
@@ -743,14 +743,14 @@
                                                         <li class="ml-1">( 9 Reviews )</li>
                                                     </ul>
                                                 </div>
-                                                <img src="images/popular-listings/3.jpg" alt="home-1" class="img-responsive">
+                                                <img src="{{asset('frontend/assets/images/popular-listings/3.jpg')}}" alt="home-1" class="img-responsive">
                                                 <div class="overlay"></div>
                                             </a>
                                         </div>
                                         <div class="fr-grid-thumb">
                                             <a href="candidate-profile.html">
                                                 <div class="overall-rate"><i class="fas fa-check"></i></div>
-                                                <img src="images/freelancers/free-3.jpg" class="img-fluid mx-auto" alt="" />
+                                                <img src="{{asset('frontend/assets/images/freelancers/free-3.jpg')}}" class="img-fluid mx-auto" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -774,7 +774,7 @@
                                         </ul>
                                         <div class="footer mt-3 img-4">
                                             <a href="listing-details.html">
-                                                <img src="images/icons/4.png" width="20" class="mr-2" alt=""> Cafe
+                                                <img src="{{asset('frontend/assets/images/icons/4.png')}}" width="20" class="mr-2" alt=""> Cafe
                                             </a>
                                             <span>
                                 <i class="fas fa-lock-open"></i> Open Now
@@ -810,14 +810,14 @@
                                                         <li class="ml-1">( 6 Reviews )</li>
                                                     </ul>
                                                 </div>
-                                                <img src="images/popular-listings/4.jpg" alt="home-1" class="img-responsive">
+                                                <img src="{{asset('frontend/assets/images/popular-listings/4.jpg')}}" alt="home-1" class="img-responsive">
                                                 <div class="overlay"></div>
                                             </a>
                                         </div>
                                         <div class="fr-grid-thumb">
                                             <a href="candidate-profile.html">
                                                 <div class="overall-rate"><i class="fas fa-check"></i></div>
-                                                <img src="images/freelancers/free-4.jpg" class="img-fluid mx-auto" alt="" />
+                                                <img src="{{asset('frontend/assets/images/freelancers/free-4.jpg')}}" class="img-fluid mx-auto" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -842,7 +842,7 @@
                                         </ul>
                                         <div class="footer mt-3 img-7">
                                             <a href="listing-details.html">
-                                                <img src="images/icons/7.png" width="20" class="mr-2" alt=""> Rent a Car
+                                                <img src="{{asset('frontend/assets/images/icons/7.png')}}" width="20" class="mr-2" alt=""> Rent a Car
                                             </a>
                                             <span>
                                 <i class="fas fa-lock-open"></i> Open Now
@@ -878,14 +878,14 @@
                                                         <li class="ml-1">( 3 Reviews )</li>
                                                     </ul>
                                                 </div>
-                                                <img src="images/popular-listings/5.jpg" alt="home-1" class="img-responsive">
+                                                <img src="{{asset('frontend/assets/images/popular-listings/5.jpg')}}" alt="home-1" class="img-responsive">
                                                 <div class="overlay"></div>
                                             </a>
                                         </div>
                                         <div class="fr-grid-thumb">
                                             <a href="candidate-profile.html">
                                                 <div class="overall-rate"><i class="fas fa-check"></i></div>
-                                                <img src="images/freelancers/free-5.jpg" class="img-fluid mx-auto" alt="" />
+                                                <img src="{{asset('frontend/assets/images/freelancers/free-5.jpg')}}" class="img-fluid mx-auto" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -910,7 +910,7 @@
                                         </ul>
                                         <div class="footer mt-3 img-1">
                                             <a href="listing-details.html">
-                                                <img src="images/icons/1.png" width="20" class="mr-2" alt=""> Hotel
+                                                <img src="{{asset('frontend/assets/images/icons/1.png')}}" width="20" class="mr-2" alt=""> Hotel
                                             </a>
                                             <span>
                                 <i class="fas fa-lock"></i> Closed Now
@@ -946,14 +946,14 @@
                                                         <li class="ml-1">( 9 Reviews )</li>
                                                     </ul>
                                                 </div>
-                                                <img src="images/popular-listings/7.jpg" alt="home-1" class="img-responsive">
+                                                <img src="{{asset('frontend/assets/images/popular-listings/7.jpg')}}" alt="home-1" class="img-responsive">
                                                 <div class="overlay"></div>
                                             </a>
                                         </div>
                                         <div class="fr-grid-thumb">
                                             <a href="candidate-profile.html">
                                                 <div class="overall-rate"><i class="fas fa-check"></i></div>
-                                                <img src="images/freelancers/free-6.jpg" class="img-fluid mx-auto" alt="" />
+                                                <img src="{{asset('frontend/assets/images/freelancers/free-6.jpg')}}" class="img-fluid mx-auto" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -977,7 +977,7 @@
                                         </ul>
                                         <div class="footer mt-3 img-8">
                                             <a href="listing-details.html">
-                                                <img src="images/icons/8.png" width="17" class="mr-2" alt=""> Shopping
+                                                <img src="{{asset('frontend/assets/images/icons/8.png')}}" width="17" class="mr-2" alt=""> Shopping
                                             </a>
                                             <span>
                                 <i class="fas fa-lock-open"></i> Open Now
@@ -1004,7 +1004,7 @@
                     <article class="col-lg-4 col-md-6 col-xs-12 serv" data-aos="fade-up">
                         <div class="serv-flex">
                             <div class="art-1 img-13">
-                                <img src="images/map.png" alt="">
+                                <img src="{{asset('frontend/assets/images/map.png')}}" alt="">
                                 <h3>Find Good Places</h3>
                             </div>
                             <div class="service-text-p">
@@ -1015,7 +1015,7 @@
                     <article class="col-lg-4 col-md-6 col-xs-12 serv" data-aos="fade-up">
                         <div class="serv-flex">
                             <div class="art-1 img-14">
-                                <img src="images/contact.png" alt="">
+                                <img src="{{asset('frontend/assets/images/contact.png')}}" alt="">
                                 <h3>Contact The Owner</h3>
                             </div>
                             <div class="service-text-p">
@@ -1026,7 +1026,7 @@
                     <article class="col-lg-4 col-md-6 col-xs-12 serv mb-0 pt" data-aos="fade-up">
                         <div class="serv-flex arrow">
                             <div class="art-1 img-15">
-                                <img src="images/user.png" alt="">
+                                <img src="{{asset('frontend/assets/images/user.png')}}" alt="">
                                 <h3>Make a Reservation</h3>
                             </div>
                             <div class="service-text-p">
@@ -1068,7 +1068,7 @@
                 <div class="owl-carousel style1">
                     <div class="test-1" data-aos="fade-up">
                         <p class="mb-3">Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et sapien donec.</p>
-                        <img src="images/testimonials/ts-1.jpg" alt="">
+                        <img src="{{asset('frontend/assets/images/testimonials/ts-1.jpg')}}" alt="">
                         <h3 class="mt-3">Lisa Smith</h3>
                         <h6>New York</h6>
                         <ul class="starts text-center">
@@ -1086,7 +1086,7 @@
                     </div>
                     <div class="test-1" data-aos="fade-up">
                         <p class="mb-3">Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et sapien donec.</p>
-                        <img src="images/testimonials/ts-2.jpg" alt="">
+                        <img src="{{asset('frontend/assets/images/testimonials/ts-2.jpg')}}" alt="">
                         <h3 class="mt-3">Jhon Morris</h3>
                         <h6>Los Angeles</h6>
                         <ul class="starts text-center">
@@ -1104,7 +1104,7 @@
                     </div>
                     <div class="test-1" data-aos="fade-up">
                         <p class="mb-3">Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et sapien donec.</p>
-                        <img src="images/testimonials/ts-3.jpg" alt="">
+                        <img src="{{asset('frontend/assets/images/testimonials/ts-3.jpg')}}" alt="">
                         <h3 class="mt-3">Mary Deshaw</h3>
                         <h6>Chicago</h6>
                         <ul class="starts text-center">
@@ -1122,7 +1122,7 @@
                     </div>
                     <div class="test-1" data-aos="fade-up">
                         <p class="mb-3">Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et sapien donec.</p>
-                        <img src="images/testimonials/ts-4.jpg" alt="">
+                        <img src="{{asset('frontend/assets/images/testimonials/ts-4.jpg')}}" alt="">
                         <h3 class="mt-3">Gary Steven</h3>
                         <h6>Philadelphia</h6>
                         <ul class="starts text-center">
@@ -1140,7 +1140,7 @@
                     </div>
                     <div class="test-1" data-aos="fade-up">
                         <p class="mb-3">Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et sapien donec.</p>
-                        <img src="images/testimonials/ts-5.jpg" alt="">
+                        <img src="{{asset('frontend/assets/images/testimonials/ts-5.jpg')}}" alt="">
                         <h3 class="mt-3">Cristy Mayer</h3>
                         <h6>San Francisco</h6>
                         <ul class="starts text-center">
@@ -1158,7 +1158,7 @@
                     </div>
                     <div class="test-1" data-aos="fade-up">
                         <p class="mb-3">Lorem ipsum dolor sit amet, ligula magna at etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et sapien donec.</p>
-                        <img src="images/testimonials/ts-6.jpg" alt="">
+                        <img src="{{asset('frontend/assets/images/testimonials/ts-6.jpg')}}" alt="">
                         <h3 class="mt-3">Ichiro Tasaka</h3>
                         <h6>Houston</h6>
                         <ul class="starts text-center">
@@ -1192,7 +1192,7 @@
                             <div class="news-item" data-aos="fade-up">
                                 <a href="blog-details.html" class="news-img-link">
                                     <div class="news-item-img">
-                                        <img class="img-responsive" src="images/blog/b-1.jpg" alt="blog image">
+                                        <img class="img-responsive" src="{{asset('frontend/assets/images/blog/b-1.jpg')}}" alt="blog image">
                                     </div>
                                 </a>
                                 <div class="news-item-text">
@@ -1212,7 +1212,7 @@
                                         <a href="blog-details.html" class="news-link">Read more...</a>
                                         <div class="admin">
                                             <p>By, Karl Smith</p>
-                                            <img src="images/testimonials/ts-6.jpg" alt="">
+                                            <img src="{{asset('frontend/assets/images/testimonials/ts-6.jpg')}}" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1222,7 +1222,7 @@
                             <div class="news-item" data-aos="fade-up">
                                 <a href="blog-details.html" class="news-img-link">
                                     <div class="news-item-img">
-                                        <img class="img-responsive" src="images/blog/b-2.jpg" alt="blog image">
+                                        <img class="img-responsive" src="{{asset('frontend/assets/images/blog/b-2.jpg')}}" alt="blog image">
                                     </div>
                                 </a>
                                 <div class="news-item-text">
@@ -1242,7 +1242,7 @@
                                         <a href="blog-details.html" class="news-link">Read more...</a>
                                         <div class="admin">
                                             <p>By, Lis Jhonson</p>
-                                            <img src="images/testimonials/ts-5.jpg" alt="">
+                                            <img src="{{asset('frontend/assets/images/testimonials/ts-5.jpg')}}" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1252,7 +1252,7 @@
                             <div class="news-item no-mb" data-aos="fade-up">
                                 <a href="blog-details.html" class="news-img-link">
                                     <div class="news-item-img">
-                                        <img class="img-responsive" src="images/blog/b-3.jpg" alt="blog image">
+                                        <img class="img-responsive" src="{{asset('frontend/assets/images/blog/b-3.jpg')}}" alt="blog image">
                                     </div>
                                 </a>
                                 <div class="news-item-text">
@@ -1272,7 +1272,7 @@
                                         <a href="blog-details.html" class="news-link">Read more...</a>
                                         <div class="admin">
                                             <p>By, Ted Willians</p>
-                                            <img src="images/testimonials/ts-4.jpg" alt="">
+                                            <img src="{{asset('frontend/assets/images/testimonials/ts-4.jpg')}}" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1295,16 +1295,16 @@
                     <p>The Companies That Represent Us.</p>
                 </div>
                 <div class="owl-carousel style2">
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/1.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/2.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/3.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/4.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/5.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/6.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/7.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/8.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/9.png" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/10.png" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/1.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/2.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/3.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/4.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/5.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/6.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/7.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/8.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/9.png')}}" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="{{asset('frontend/assets/images/partners/10.png')}}" alt=""></div>
                 </div>
             </div>
         </div>
@@ -1318,7 +1318,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="netabout">
                                 <a href="index.html" class="logo">
-                                    <img src="images/logo-footer.svg" alt="netcom">
+                                    <img src="{{asset('frontend/assets/images/logo-footer.svg')}}" alt="netcom">
                                 </a>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
                             </div>
@@ -1374,47 +1374,47 @@
                                 <ul class="photo">
                                     <li class="hover-effect">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-1.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-1.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-2.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-2.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-3.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-3.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-4.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-4.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-5.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-5.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-6.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-6.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect mb-0">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-7.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-7.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect mb-0">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-8.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-8.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li class="hover-effect mb-0">
                                         <figure>
-                                            <a href="#"><img src="images/instagram/inst-9.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('frontend/assets/images/instagram/inst-9.jpg')}}" alt=""></a>
                                         </figure>
                                     </li>
                                 </ul>
@@ -1520,6 +1520,10 @@
             <div id="status">
                 <div class="status-mes"></div>
             </div>
+
+
+
+            
         </div>
         <!-- END PRELOADER -->
 
