@@ -20,7 +20,7 @@
                 <div class="col-md-12">
                     <div class="main-card mb-3 card p-3">
                         <h5 class="card-title">New Ad</h5>
-                        <form action="{{ route('ads.store') }}" method="POST" class="needs-validation" novalidate>
+                        <form action="{{ route('ads.store') }}" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
                             @csrf
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label>Image</label>
-                                    <input type="file" class="form-control" name="bag_img" required>
+                                    <input type="file" class="form-control" name="bag_img[]" required>
                                     <div class="invalid-feedback">
                                         Please provide a image.
                                     </div>

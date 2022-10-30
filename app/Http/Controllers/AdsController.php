@@ -35,6 +35,21 @@ class AdsController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'bag_img' => 'required',
+            'bag_img.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+        if($request->hasfile('filename'))
+        {
+
+           foreach($request->file('bag_img') as $image)
+           {
+               $name=$image->getClientOriginalName();
+               $image->move(public_path().'/images/', $name);  
+               $data[] = $name;  
+           }
+        }
+        $img = json_encode($data);
         $input = $request->all();
         Ads::create([
             'title' => $input['title'],
@@ -42,7 +57,7 @@ class AdsController extends Controller
             'found_date' => $input['found_date'],
             'found_time' => $input['found_time'],
             'location' => $input['location'],
-            'bag_img' => $input['bag_img']
+            'bag_img' => $img
           ]);
           return redirect()->route('home');
     }
