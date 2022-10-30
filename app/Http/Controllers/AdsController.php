@@ -14,8 +14,7 @@ class AdsController extends Controller
      */
     public function index()
     {
-        $ads = Ads::all();
-        return view('backend.index', compact('ads'));
+       
     }
 
     /**
@@ -25,7 +24,7 @@ class AdsController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.ads_manager.create');
     }
 
     /**
@@ -36,7 +35,16 @@ class AdsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Ads::create([
+            'title' => $input['title'],
+            'description' => $input['description'],
+            'found_date' => $input['found_date'],
+            'found_time' => $input['found_time'],
+            'location' => $input['location'],
+            'bag_img' => $input['bag_img']
+          ]);
+          return redirect()->route('home');
     }
 
     /**

@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use App\Models\Ads;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,6 +22,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('backend.index');
+        $ads = Ads::all();
+        return view('backend.index', compact('ads'));
     }
 }

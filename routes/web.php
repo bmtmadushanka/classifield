@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\AdsController;
+
 
 
 
@@ -33,4 +35,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
+    Route::resource('ads', AdsController::class);
+
 });
