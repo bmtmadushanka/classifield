@@ -86,6 +86,14 @@ class UserController extends Controller
     
         return view('users.edit',compact('user','roles','userRole'));
     }
+    public function user_profile_edit($id)
+    {
+        $user = User::find($id);
+        $roles = Role::pluck('name','name')->all();
+        $userRole = $user->roles->pluck('name','name')->all();
+    
+        return view('backend.profile.profile',compact('user','roles','userRole'));
+    }
     
     /**
      * Update the specified resource in storage.
@@ -119,6 +127,7 @@ class UserController extends Controller
         return redirect()->route('users.index')
                         ->with('success','User updated successfully');
     }
+    
     
     /**
      * Remove the specified resource from storage.

@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\AdsController;
+use App\Http\Controllers\UserController;
+
 
 
 
@@ -38,3 +40,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('ads', AdsController::class);
 
 });
+
+Route::any('user_profile_edit/{id}', [UserController::class, 'user_profile_edit'])->name('user_profile_edit');
