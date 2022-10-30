@@ -64,9 +64,10 @@ class AdsController extends Controller
      * @param  \App\Models\Ads  $ads
      * @return \Illuminate\Http\Response
      */
-    public function edit(Ads $ads)
+    public function edit(Ads $ads, $id)
     {
-        //
+        $ad = Ads::find($id);
+        return view('backend.ads_manager.edit', compact('ad'));
     }
 
     /**
@@ -76,9 +77,11 @@ class AdsController extends Controller
      * @param  \App\Models\Ads  $ads
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Ads $ads)
+    public function update(Request $request, Ads $ads, $id)
     {
-        //
+        $ads = Ads::find($id);
+        $ads->update($request->all());
+        return redirect()->route('home');
     }
 
     /**
@@ -87,8 +90,10 @@ class AdsController extends Controller
      * @param  \App\Models\Ads  $ads
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Ads $ads)
+    public function destroy(Ads $ads, $id)
     {
-        //
+        $ads = Ads::find($id);
+        $ads->delete();
+        return redirect()->route('home');
     }
 }

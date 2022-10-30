@@ -68,10 +68,16 @@
                                                     <p>{{ $data->location }}</p>
                                                 </td>
                                                 <td class="text-center">
-                                                    <button type="button" id="PopoverCustomT-2"
-                                                        class="btn btn-outline-primary">Edit</button>
-                                                    <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i
-                                                            class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                                    <form action="{{ route('ads.destroy', $data->id) }}" method="POST">
+                                                        <a href="{{ route('ads.edit', $data->id) }}"
+                                                            class="btn btn-outline-primary">Edit</a>
+                                                        @csrf
+                                                        {{ method_field('DELETE') }}
+                                                        <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger">
+                                                            <i class="pe-7s-trash btn-icon-wrapper"> </i>
+                                                        </button>
+                                                    </form>
+                                                    
                                                 </td>
                                             </tr>
                                         @endforeach
