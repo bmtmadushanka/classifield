@@ -28,6 +28,9 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [FrontendController::class, 'index'])->name('index');
 
+Route::get('redirect/{driver}', [App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider']);
+Route::get('{driver}/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
+
 Auth::routes();
   
 Route::get('/home', [HomeController::class, 'index'])->name('home');
