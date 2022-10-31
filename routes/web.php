@@ -6,9 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\AdsController;
 use App\Http\Controllers\UserController;
-
-
-
+use App\Http\Controllers\BrandsController;
 
 
 /*
@@ -34,14 +32,12 @@ Route::get('{driver}/callback', [App\Http\Controllers\Auth\LoginController::clas
 Auth::routes();
   
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-
-
   
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
     Route::resource('ads', AdsController::class);
-
+    Route::resource('brands', BrandsController::class);
 });
 
 Route::any('user_profile_edit/{id}', [UserController::class, 'user_profile_edit'])->name('user_profile_edit');
