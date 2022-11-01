@@ -1,7 +1,5 @@
-@extends('layouts.app')
-
-
-@section('content')
+@include('backend._partials.header')
+    @include('backend._partials.sidebar')
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
@@ -52,5 +50,5 @@
 {!! $roles->render() !!}
 
 
-<p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
-@endsection
+@include('backend._partials.js')
+@include('backend._partials.footer')

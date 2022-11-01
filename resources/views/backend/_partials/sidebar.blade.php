@@ -47,6 +47,18 @@
                        Brands
                     </a>
                 </li>
+                <li>
+                    <a href="/users">
+                        <i class="metismenu-icon pe-7s-rocket"></i>
+                       Users
+                    </a>
+                </li>
+                <li>
+                    <a href="/roles">
+                        <i class="metismenu-icon pe-7s-rocket"></i>
+                       Roles
+                    </a>
+                </li>
                 @endrole
                 @role('Seller')
                 <li class="app-sidebar__heading">Dashboards</li>
