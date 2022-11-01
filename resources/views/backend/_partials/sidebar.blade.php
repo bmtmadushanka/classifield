@@ -33,6 +33,7 @@
     </div>    <div class="scrollbar-sidebar">
         <div class="app-sidebar__inner">
             <ul class="vertical-nav-menu">
+                @role('Admin')
                 <li class="app-sidebar__heading">Dashboards</li>
                 <li>
                     <a href="#" class="mm-active">
@@ -46,7 +47,16 @@
                        Brands
                     </a>
                 </li>
-       
+                @endrole
+                @role('Seller')
+                <li class="app-sidebar__heading">Dashboards</li>
+                <li>
+                    <a href="{{route('brands.index')}}">
+                        <i class="metismenu-icon pe-7s-rocket"></i>
+                       Brands
+                    </a>
+                </li>
+                @endrole
             </ul>
         </div>
     </div>

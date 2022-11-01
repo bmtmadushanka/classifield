@@ -1,7 +1,5 @@
-@extends('layouts.app')
-
-
-@section('content')
+@include('backend._partials.header')
+    @include('backend._partials.sidebar')
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
@@ -55,5 +53,5 @@
 
 {!! $data->render() !!}
 
-
-@endsection
+@include('backend._partials.js')
+@include('backend._partials.footer')
