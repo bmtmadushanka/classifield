@@ -22,7 +22,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $ads = Ads::all();
-        return view('backend.index', compact('ads'));
+        return view('backend.index');
     }
 }

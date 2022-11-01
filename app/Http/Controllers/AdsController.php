@@ -14,7 +14,8 @@ class AdsController extends Controller
      */
     public function index()
     {
-       
+        $ads = Ads::all();
+        return view('backend.ads_manager.index', compact('ads'));
     }
 
     /**
