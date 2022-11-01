@@ -51,9 +51,9 @@
                 @role('Seller')
                 <li class="app-sidebar__heading">Dashboards</li>
                 <li>
-                    <a href="{{route('brands.index')}}">
+                    <a href="{{route('ads.index')}}" class="mm-active">
                         <i class="metismenu-icon pe-7s-rocket"></i>
-                       Brands
+                       Ads Managment
                     </a>
                 </li>
                 @endrole
