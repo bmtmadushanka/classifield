@@ -22,14 +22,16 @@
                         <!-- Main Navigation -->
                         <nav id="navigation" class="style-1">
                             <ul id="responsive">
-                                <li><a href="#">Home</a>
+                                <li><a href="{{route('home')}}">Home</a>
                                 </li>
-                                <li><a href="#">All Listings</a>
+                                <li><a href="{{route('listings')}}">All Listings</a>
                                 </li>
-                                <li><a href="#">Privacy Policy</a>
+                                <li><a href="{{route('privacy')}}">Privacy Policy</a>
                                 </li>
-                                <li><a href="contact-us.html">About Us</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="{{route('faq')}}">Faq</a>
+                                </li>
+                                <li><a href="{{route('about')}}">About Us</a></li>
+                                <li><a href="{{route('contact')}}">Contact Us</a></li>
                                 <li class="d-none d-xl-none d-block d-lg-block"><a href="login.html">Login</a></li>
                                 <li class="d-none d-xl-none d-block d-lg-block"><a href="register.html">Register</a></li>
                                 <li class="d-none d-xl-none d-block d-lg-block mt-5 pb-4 ml-5 border-bottom-0"><a href="add-listing.html" class="button border btn-lg btn-block text-center">Add Listing<i class="fas fa-laptop-house ml-2"></i></a></li>
@@ -85,7 +87,7 @@
                     <!-- Right Side Content / End -->
 
                     <!-- lang-wrap-->
-                    <div class="header-user-menu user-menu add d-none d-lg-none d-xl-flex">
+                    {{-- <div class="header-user-menu user-menu add d-none d-lg-none d-xl-flex">
                         <div class="lang-wrap">
                             <div class="show-lang"><span><i class="fas fa-globe-americas"></i><strong>ENG</strong></span><i class="fa fa-caret-down arrlan"></i></div>
                             <ul class="lang-tooltip lang-action no-list-style">
@@ -95,7 +97,7 @@
                                 <li><a href="#" data-lantext="De">Deutsch</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- lang-wrap end-->
 
                 </div>

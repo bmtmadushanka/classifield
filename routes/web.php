@@ -27,6 +27,14 @@ use App\Http\Controllers\BrandsController;
 
 Route::get('/', [FrontendController::class, 'index'])->name('index');
 
+Route::get('/about', [FrontendController::class, 'about'])->name('about');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+Route::get('/listings', [FrontendController::class, 'listings'])->name('listings');
+Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
+Route::get('/privacy', [FrontendController::class, 'privacy'])->name('privacy');
+
+
+
 Route::get('redirect/{driver}', [App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider']);
 Route::get('{driver}/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
 
