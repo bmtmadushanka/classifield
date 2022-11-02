@@ -36,7 +36,7 @@
                 @role('Admin')
                 <li class="app-sidebar__heading">Dashboards</li>
                 <li>
-                    <a href="{{route('ads.index')}}" class="mm-active">
+                    <a href="{{route('ads.index')}}">
                         <i class="metismenu-icon pe-7s-rocket"></i>
                        Ads Managment
                     </a>
