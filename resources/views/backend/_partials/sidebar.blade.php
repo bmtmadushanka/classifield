@@ -50,15 +50,15 @@
                 <li>
                     <a href="/users">
                         <i class="metismenu-icon pe-7s-rocket"></i>
-                       Users
+                       Sellers
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="/roles">
                         <i class="metismenu-icon pe-7s-rocket"></i>
                        Roles
                     </a>
-                </li>
+                </li> --}}
                 @endrole
                 @role('Seller')
                 <li class="app-sidebar__heading">Dashboards</li>

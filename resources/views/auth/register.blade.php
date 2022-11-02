@@ -37,35 +37,31 @@
         <!-- START SECTION REGISTER -->
         <div id="login">
             <div class="login">
-                <form autocomplete="off">
+                <form method="POST" action="{{ route('register') }}">
+                    @csrf
                     <div class="form-group">
                         <label>Your Name</label>
-                        <input class="form-control" type="text">
-                        <i class="ti-user"></i>
-                    </div>
-                    <div class="form-group">
-                        <label>Your Last Name</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" name="name" value="{{ old('name') }}" required autocomplete="name">
                         <i class="ti-user"></i>
                     </div>
                     <div class="form-group">
                         <label>Your Email</label>
-                        <input class="form-control" type="email">
+                        <input class="form-control" type="email" name="email" value="{{ old('email') }}" required autocomplete="email">
                         <i class="icon_mail_alt"></i>
                     </div>
                     <div class="form-group">
                         <label>Your password</label>
-                        <input class="form-control" type="password" id="password1">
+                        <input class="form-control" type="password" id="password1" name="password" required autocomplete="new-password">
                         <i class="icon_lock_alt"></i>
                     </div>
                     <div class="form-group">
                         <label>Confirm password</label>
-                        <input class="form-control" type="password" id="password2">
+                        <input class="form-control" type="password" id="password_confirmation" name="password_confirmation">
                         <i class="icon_lock_alt"></i>
                     </div>
                     <div id="pass-info" class="clearfix"></div>
-                    <a href="#0" class="btn_1 rounded full-width add_top_30 mt-5">Register Now!</a>
-                    <div class="text-center add_top_10">Already have an acccount? <strong><a href="login.html">Sign In</a></strong></div>
+                    <button type="submit" class="btn_1 rounded full-width add_top_30 mt-5">Register Now!</button>
+                    <div class="text-center add_top_10">Already have an acccount? <strong><a href="{{route('login')}}">Sign In</a></strong></div>
                 </form>
             </div>
         </div>
