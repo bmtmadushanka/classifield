@@ -1,198 +1,60 @@
 @extends('layouts.app')
 @section('content')
-<div class="col-lg-9 col-md-12 col-xs-12 pl-0 user-dash2">
-     <div class="my-properties">
+<div class="col-lg-9 col-md-12 col-xs-12 pl-0 user-dash2 mb-4">
+    
+     <div class="my-properties mt-5">
          <table class="table-responsive">
              <thead>
                  <tr>
                      <th class="pl-2">My Listings</th>
-                     <th class="p-0"></th>
                      <th>Date Added</th>
-                     <th>Views</th>
                      <th>Actions</th>
                  </tr>
              </thead>
              <tbody>
-                 <tr>
-                     <td class="image myelist">
-                         <a href="listing-details.html"><img alt="my-properties-3" src="images/popular-listings/1.jpg" class="img-fluid"></a>
-                     </td>
-                     <td>
-                         <div class="inner">
-                             <a href="listing-details.html"><h2>Luxury Restaurant</h2></a>
-                             <figure><i class="lni-map-marker"></i> Est St, 77 - Central Park South, NYC</figure>
-                             <ul class="starts text-left mb-0">
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="ml-3">(6 Reviews)</li>
-                             </ul>
-                         </div>
-                     </td>
-                     <td>08.14.2020</td>
-                     <td>163</td>
-                     <td class="actions">
-                         <a href="#" class="edit"><i class="lni-pencil"></i>Edit</a>
-                         <a href="#"><i class="far fa-trash-alt"></i></a>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td class="image">
-                         <a href="listing-details.html"><img alt="my-properties-3" src="images/popular-listings/2.jpg" class="img-fluid"></a>
-                     </td>
-                     <td>
-                         <div class="inner">
-                             <a href="listing-details.html"><h2>Gym in Town</h2></a>
-                             <figure><i class="lni-map-marker"></i> Est St, 77 - Central Park South, NYC</figure>
-                             <ul class="starts text-left mb-0">
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star-o"></i>
-                                 </li>
-                                 <li class="ml-3">(6 Reviews)</li>
-                             </ul>
-                         </div>
-                     </td>
-                     <td>08.14.2020</td>
-                     <td>202</td>
-                     <td class="actions">
-                         <a href="#" class="edit"><i class="lni-pencil"></i>Edit</a>
-                         <a href="#"><i class="far fa-trash-alt"></i></a>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td class="image">
-                         <a href="listing-details.html"><img alt="my-properties-3" src="images/popular-listings/3.jpg" class="img-fluid"></a>
-                     </td>
-                     <td>
-                         <div class="inner">
-                             <a href="listing-details.html"><h2>Cafe in Boston</h2></a>
-                             <figure><i class="lni-map-marker"></i> Est St, 77 - Central Park South, NYC</figure>
-                             <ul class="starts text-left mb-0">
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="ml-3">(6 Reviews)</li>
-                             </ul>
-                         </div>
-                     </td>
-                     <td>08.14.2020</td>
-                     <td>412</td>
-                     <td class="actions">
-                         <a href="#" class="edit"><i class="lni-pencil"></i>Edit</a>
-                         <a href="#"><i class="far fa-trash-alt"></i></a>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td class="image">
-                         <a href="listing-details.html"><img alt="my-properties-3" src="images/popular-listings/4.jpg" class="img-fluid"></a>
-                     </td>
-                     <td>
-                         <div class="inner">
-                             <a href="listing-details.html"><h2>Car Dealer in New York</h2></a>
-                             <figure><i class="lni-map-marker"></i> Est St, 77 - Central Park South, NYC</figure>
-                             <ul class="starts text-left mb-0">
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star-o"></i>
-                                 </li>
-                                 <li class="ml-3">(6 Reviews)</li>
-                             </ul>
-                         </div>
-                     </td>
-                     <td>08.14.2020</td>
-                     <td>675</td>
-                     <td class="actions">
-                         <a href="#" class="edit"><i class="lni-pencil"></i>Edit</a>
-                         <a href="#"><i class="far fa-trash-alt"></i></a>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td class="image">
-                         <a href="listing-details.html"><img alt="my-properties-3" src="images/popular-listings/8.jpg" class="img-fluid"></a>
-                     </td>
-                     <td>
-                         <div class="inner">
-                             <a href="listing-details.html"><h2>Real Estate in San Francisco</h2></a>
-                             <figure><i class="lni-map-marker"></i> Est St, 77 - Central Park South, NYC</figure>
-                             <ul class="starts text-left mb-0">
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="ml-3">(6 Reviews)</li>
-                             </ul>
-                         </div>
-                     </td>
-                     <td>08.14.2020</td>
-                     <td>325</td>
-                     <td class="actions">
-                         <a href="#" class="edit"><i class="lni-pencil"></i>Edit</a>
-                         <a href="#"><i class="far fa-trash-alt"></i></a>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td class="image">
-                         <a href="listing-details.html"><img alt="my-properties-3" src="images/popular-listings/9.jpg" class="img-fluid"></a>
-                     </td>
-                     <td>
-                         <div class="inner">
-                             <a href="listing-details.html"><h2>Movie Theater in Toronto</h2></a>
-                             <figure><i class="lni-map-marker"></i> Est St, 77 - Central Park South, NYC</figure>
-                             <ul class="starts text-left mb-0">
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star"></i>
-                                 </li>
-                                 <li class="mb-0"><i class="fa fa-star-o"></i>
-                                 </li>
-                                 <li class="ml-3">(6 Reviews)</li>
-                             </ul>
-                         </div>
-                     </td>
-                     <td>08.14.2020</td>
-                     <td>247</td>
-                     <td class="actions">
-                         <a href="#" class="edit"><i class="lni-pencil"></i>Edit</a>
-                         <a href="#"><i class="far fa-trash-alt"></i></a>
-                     </td>
-                 </tr>
+                @isset($ads)
+                @foreach ($ads as $data)
+                    <tr>
+                        <td>
+                            <div class="inner">
+                                <a href="listing-details.html"><h2>{{ $data->location }} </h2></a>
+                                <figure><i class="lni-map-marker"></i>{{ $data->description }}</figure>
+                                <ul class="starts text-left mb-0">
+                                    <li class="mb-0"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="mb-0"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="mb-0"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="mb-0"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="mb-0"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="ml-3">(6 Reviews)</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <p>{{ $data->found_date }} | {{ $data->found_time }}</p>
+                        </td>
+                        <td>
+                            <form action="{{ route('ads.destroy', $data->id) }}" method="POST">
+                                <a href="{{ route('ads.edit', $data->id) }}"
+                                    >
+                                    <i class="fa fa-pencil"></i></a>
+                                </a>
+                                @csrf
+                                {{ method_field('DELETE') }}
+                                <button class="mr-2 btn-icon btn-icon-only ml-2">
+                                    <i class="fa fa-trash "></i></a>
+                                </button>
+                            </form>
+                            
+                        </td>
+                    </tr>
+                @endforeach
+            @endisset
+                 
              </tbody>
          </table>
          <div class="pagination-container">

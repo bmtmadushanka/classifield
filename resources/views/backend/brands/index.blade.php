@@ -4,47 +4,51 @@
 
 <div class="dashborad-box">
     <h4 class="title">Listing</h4>
+    <a type="button" href="{{ route('brands.create') }}" title="Example Tooltip"
+    data-placement="bottom" class="btn-shadow mr-3 btn btn-dark float-right mb-2">
+    <i class="fa fa-star"></i> Create a new brand
+    </a>
     <div class="section-body listing-table">
         <div class="table-responsive">
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Listing Name</th>
-                        <th>Date</th>
-                        <th>Rating</th>
-                        <th>Status</th>
-                        <th>Edit</th>
+                        <th class="text-center">#</th>
+                        <th>Brand Name</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Luxury Restaurant</td>
-                        <td>23 Jan 2020</td>
-                        <td class="rating"><span>5.0</span></td>
-                        <td class="status"><span class=" active">Active</span></td>
-                        <td class="edit"><a href="#"><i class="fa fa-pencil"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>Gym in Town</td>
-                        <td>11 Feb 2020</td>
-                        <td class="rating"><span>4.5</span></td>
-                        <td class="status"><span class="active">Active</span></td>
-                        <td class="edit"><a href="#"><i class="fa fa-pencil"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>Cafe in Boston</td>
-                        <td>09 Jan 2020</td>
-                        <td class="rating"><span>5.0</span></td>
-                        <td class="status"><span class="non-active">Non-Active</span></td>
-                        <td class="edit"><a href="#"><i class="fa fa-pencil"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td class="pb-0">Car Dealer in New York</td>
-                        <td class="pb-0">24 Feb 2018</td>
-                        <td class="rating pb-0"><span>4.5</span></td>
-                        <td class="status pb-0"><span class="active">Active</span></td>
-                        <td class="edit pb-0"><a href="#"><i class="fa fa-pencil"></i></a></td>
-                    </tr>
+                        @isset($brands)
+                        @foreach ($brands as $data)
+                            <tr>
+                                <td class="text-center text-muted">{{ $data->id }}</td>
+                                <td>
+                        
+                                    <div class="widget-heading">{{ $data->brand_name }}</div>
+                               
+                                </td>
+                               
+                                <td class="text-center">
+                                    <form action="{{ route('brands.destroy', $data->id) }}" method="POST">
+                                        <a href="{{ route('brands.edit', $data->id) }}"
+                                            >
+                                            <i class="fa fa-pencil"></i></a>
+                                        </a>
+                                        @csrf
+                                        {{ method_field('DELETE') }}
+                                        <button class="mr-2 ml-2">
+                                            <i class="fa fa-trash"></i></a>
+                                        </button>
+                                    </form>
+                                    
+                                </td>
+                            </tr>
+                        @endforeach
+                    @endisset
+    
+                   
                 </tbody>
             </table>
         </div>
