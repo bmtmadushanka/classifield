@@ -17,12 +17,45 @@
         </ul>
         <div class="agent-contact-form-sidebar">
             <h4>Request Inquiry</h4>
-            <form name="contact_form" method="post" action="https://code-theme.com/html/listifind/functions.php">
-                <input type="text" id="fname" name="full_name" placeholder="Full Name" required />
-                <input type="number" id="pnumber" name="phone_number" placeholder="Phone Number" required />
-                <input type="email" id="emailid" name="email_address" placeholder="Email Address" required />
-                <textarea placeholder="Message" name="message" required></textarea>
-                <input type="submit" name="sendmessage" class="multiple-send-message" value="Submit Request" />
+            {!! Form::model($user, ['method' => 'PATCH', 'route' => ['users.update', $user->id]]) !!}
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Name:</strong>
+                        {!! Form::text('name', null, ['placeholder' => 'Name', 'class' => '']) !!}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Email:</strong>
+                        {!! Form::text('email', null, ['placeholder' => 'Email', 'class' => '']) !!}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Password:</strong>
+                        {!! Form::password('password', ['placeholder' => 'Password', 'class' => '']) !!}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Confirm Password:</strong>
+                        {!! Form::password('confirm-password', ['placeholder' => 'Confirm Password', 'class' => '']) !!}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Role:</strong> <br>
+                        {!! Form::select('roles[]', $roles,$userRole, array('class' => '','multiple')) !!}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="{{ url()->previous() }}" class="btn btn-secondary">Back</a>
+
+                </div>
+            </div>
+            {!! Form::close() !!}
             </form>
         </div>
     </div>
