@@ -17,21 +17,9 @@
                     <tr>
                         <td>
                             <div class="inner">
+                                <img src="{{ $data->bag_img }}" alt="" srcset="">
                                 <a href="listing-details.html"><h2>{{ $data->location }} </h2></a>
                                 <figure><i class="lni-map-marker"></i>{{ $data->description }}</figure>
-                                <ul class="starts text-left mb-0">
-                                    <li class="mb-0"><i class="fa fa-star"></i>
-                                    </li>
-                                    <li class="mb-0"><i class="fa fa-star"></i>
-                                    </li>
-                                    <li class="mb-0"><i class="fa fa-star"></i>
-                                    </li>
-                                    <li class="mb-0"><i class="fa fa-star"></i>
-                                    </li>
-                                    <li class="mb-0"><i class="fa fa-star"></i>
-                                    </li>
-                                    <li class="ml-3">(6 Reviews)</li>
-                                </ul>
                             </div>
                         </td>
                         <td>
