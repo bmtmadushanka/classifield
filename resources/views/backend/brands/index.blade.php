@@ -1,75 +1,54 @@
-@include('backend._partials.header')
-<div class="app-main">
-    @include('backend._partials.sidebar')
-    <div class="app-main__outer">
-        <div class="app-main__inner">
-            <div class="app-page-title">
-                <div class="page-title-wrapper">
-                    <div class="page-title-heading">
-                        <div class="page-title-icon">
-                            <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                            </i>
-                        </div>
-                        <div>Brands Manager</div>
-                    </div>
-                    <div class="page-title-actions">
-                        <a type="button" href="{{ route('brands.create') }}" title="Example Tooltip"
-                            data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
-                            <i class="fa fa-star"></i> Create a new brand
-                        </a>
-                    </div>
-                </div>
-            </div>
+@extends('layouts.app')
+@section('content')
+<div class="col-lg-9 col-md-12 col-xs-12 pl-0 user-dash2">
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="main-card mb-3 card">
-                        <div class="card-header">All Brands
-
-                        </div>
-                        <div class="table-responsive">
-                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">#</th>
-                                        <th>Brand Name</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @isset($brands)
-                                        @foreach ($brands as $data)
-                                            <tr>
-                                                <td class="text-center text-muted">{{ $data->id }}</td>
-                                                <td>
-                                        
-                                                    <div class="widget-heading">{{ $data->brand_name }}</div>
-                                               
-                                                </td>
-                                               
-                                                <td class="text-center">
-                                                    <form action="{{ route('brands.destroy', $data->id) }}" method="POST">
-                                                        <a href="{{ route('brands.edit', $data->id) }}"
-                                                            class="btn btn-outline-primary">Edit</a>
-                                                        @csrf
-                                                        {{ method_field('DELETE') }}
-                                                        <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger">
-                                                            <i class="pe-7s-trash btn-icon-wrapper"> </i>
-                                                        </button>
-                                                    </form>
-                                                    
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    @endisset
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="d-block text-center card-footer">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="dashborad-box">
+    <h4 class="title">Listing</h4>
+    <div class="section-body listing-table">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Listing Name</th>
+                        <th>Date</th>
+                        <th>Rating</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luxury Restaurant</td>
+                        <td>23 Jan 2020</td>
+                        <td class="rating"><span>5.0</span></td>
+                        <td class="status"><span class=" active">Active</span></td>
+                        <td class="edit"><a href="#"><i class="fa fa-pencil"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Gym in Town</td>
+                        <td>11 Feb 2020</td>
+                        <td class="rating"><span>4.5</span></td>
+                        <td class="status"><span class="active">Active</span></td>
+                        <td class="edit"><a href="#"><i class="fa fa-pencil"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Cafe in Boston</td>
+                        <td>09 Jan 2020</td>
+                        <td class="rating"><span>5.0</span></td>
+                        <td class="status"><span class="non-active">Non-Active</span></td>
+                        <td class="edit"><a href="#"><i class="fa fa-pencil"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-0">Car Dealer in New York</td>
+                        <td class="pb-0">24 Feb 2018</td>
+                        <td class="rating pb-0"><span>4.5</span></td>
+                        <td class="status pb-0"><span class="active">Active</span></td>
+                        <td class="edit pb-0"><a href="#"><i class="fa fa-pencil"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        @include('backend._partials.js')
-        @include('backend._partials.footer')
+    </div>
+</div>
+</div>
+@endsection

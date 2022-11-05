@@ -1,4 +1,3 @@
-
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="{{asset('frontend/assets/css/jquery-ui.css')}}">
 <!-- GOOGLE FONTS -->

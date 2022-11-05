@@ -1,6 +1,8 @@
 
 @extends('layouts.app')
 @section('content')
+<div class="col-lg-9 col-md-12 col-xs-12 pl-0 user-dash2">
+
 <div class="dashborad-box stat">
     <h4 class="title">Manage Dashboard</h4>
     <div class="section-body">
@@ -311,5 +313,6 @@
             <button type="submit" class="btn btn-primary btn-lg mt-2">Submit</button>
         </form>
     </div>
+</div>
 </div>
 @endsection
