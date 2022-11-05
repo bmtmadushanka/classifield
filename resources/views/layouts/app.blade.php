@@ -28,7 +28,7 @@
                         <div class="left-side">
                             <!-- Logo -->
                             <div id="logo">
-                                <a href="index.html"><img src="{{asset('frontend/assets/images/logo.svg')}}" alt=""></a>
+                                <a href="{{route('index')}}"><img src="{{asset('frontend/assets/images/logo.svg')}}" alt=""></a>
                             </div>
                             <!-- Mobile Navigation -->
                             <div class="mmenu-trigger">
