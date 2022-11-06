@@ -23,7 +23,7 @@
                             </div>
                         </td>
                         <td>
-                            <p>{{ $data->found_date }} | {{ $data->found_time }}</p>
+                            <p>{{ $data->found_date }}</p>
                         </td>
                         <td>
                             <form action="{{ route('ads.destroy', $data->id) }}" method="POST">
