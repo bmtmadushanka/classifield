@@ -18,9 +18,12 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->string('found_date')->nullable();
-            $table->string('found_time')->nullable();
             $table->string('location')->nullable();
             $table->string('bag_img')->nullable();
+            $table->string('contact_name')->nullable();
+            $table->string('user_name')->nullable();
+            $table->string('user_email')->nullable();
+            $table->string('phone')->nullable();
             $table->timestamps();
         });
     }

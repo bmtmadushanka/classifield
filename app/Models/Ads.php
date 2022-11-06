@@ -12,8 +12,11 @@ class Ads extends Model
         'title',
         'description',
         'found_date',
-        'found_time',
         'location',
-        'bag_img'
+        'bag_img',
+        'contact_name',
+        'user_name',
+        'user_email',
+        'phone',
     ];
 }

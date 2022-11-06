@@ -56,8 +56,11 @@ class AdsController extends Controller
             'title' => $input['title'],
             'description' => $input['description'],
             'found_date' => $input['found_date'],
-            'found_time' => $input['found_time'],
             'location' => $input['location'],
+            'contact_name' => $input['contact_name'],
+            'user_name' => $input['user_name'],
+            'user_email' => $input['user_email'],
+            'phone' => $input['phone'],
             'bag_img' => $img
           ]);
           return redirect()->route('home');

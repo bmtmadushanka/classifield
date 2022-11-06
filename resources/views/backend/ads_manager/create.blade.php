@@ -5,7 +5,8 @@
     <div class="single-add-property">
         <h3>Basic Informations</h3>
         <div class="property-form-group">
-            <form>
+            <form action="{{ route('ads.store') }}" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
+                @csrf
                 <div class="row">
                     <div class="col-md-12">
                         <p>
@@ -18,7 +19,7 @@
                     <div class="col-md-12">
                         <p>
                             <label for="description">Listing Description</label>
-                            <textarea id="description" name="pro-dexc" placeholder="Describe about your Listing"></textarea>
+                            <textarea id="description" name="description" placeholder="Describe about your Listing"></textarea>
                         </p>
                     </div>
                 </div>
@@ -42,8 +43,14 @@
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <p class="no-mb">
-                            <label for="price">Keywords</label>
-                            <input type="text" name="price" placeholder="Keywords should be separated by commas" id="price">
+                            <label for="price">Location</label>
+                            <input type="text" name="location" placeholder="location" id="location">
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p class="no-mb">
+                            <label for="price">Found date</label>
+                            <input type="date" name="found_date" id="found_date">
                         </p>
                     </div>
                 </div>
@@ -67,13 +74,13 @@
                 <div class="col-lg-6 col-md-12">
                     <p>
                         <label for="con-name">Name</label>
-                        <input type="text" placeholder="Enter Your Name" id="con-name" name="con-name">
+                        <input type="text" placeholder="Enter Your Name" id="contact_name" name="contact_name">
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <p>
                         <label for="con-user">Username</label>
-                        <input type="text" placeholder="Enter Your Username" id="con-user" name="con-user">
+                        <input type="text" placeholder="Enter Your Username" id="user_name" name="user_name">
                     </p>
                 </div>
             </div>
@@ -81,13 +88,13 @@
                 <div class="col-lg-6 col-md-12">
                     <p class="no-mb first">
                         <label for="con-email">Email</label>
-                        <input type="email" placeholder="Enter Your Email" id="con-email" name="con-email">
+                        <input type="email" placeholder="Enter Your Email" id="user_email" name="user_email">
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <p class="no-mb last">
                         <label for="con-phn">Phone</label>
-                        <input type="text" placeholder="Enter Your Phone Number" id="con-phn" name="con-phn">
+                        <input type="text" placeholder="Enter Your Phone Number" id="phone" name="phone">
                     </p>
                 </div>
             </div>
