@@ -80,7 +80,8 @@
                 <div class="col-lg-6 col-md-12">
                     <p>
                         <label for="con-user">Username</label>
-                        <input type="text" placeholder="Enter Your Username" id="user_name" name="user_name">
+                        <input type="text" placeholder="Enter Your Username"  value="{{Auth::user()->name}}">
+                        <input type="hidden" id="user_name" name="user_name" value="{{Auth::user()->id}}" >
                     </p>
                 </div>
             </div>
@@ -88,7 +89,7 @@
                 <div class="col-lg-6 col-md-12">
                     <p class="no-mb first">
                         <label for="con-email">Email</label>
-                        <input type="email" placeholder="Enter Your Email" id="user_email" name="user_email">
+                        <input type="email" placeholder="Enter Your Email" id="user_email" name="user_email" value="{{Auth::user()->email}}">
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12">
